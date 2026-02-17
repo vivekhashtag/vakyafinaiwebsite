@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakya Intelligence | The Financial Intelligence Operating System</title>
+    <meta name="description" content="SentinelFlow by Vakya Intelligence - Transform financial institutions from reactive compliance to proactive intelligence. Three integrated AI engines solving the $270B compliance crisis.">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="logo.png" alt="Vakya Intelligence" class="nav-logo-img">
+                <span class="nav-logo-text">Vakya<span class="accent">Intelligence</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#problem">Problem</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#engines">Engines</a></li>
+                <li><a href="#why-vakya">Why Vakya</a></li>
+                <li><a href="#impact">Impact</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact" class="nav-cta">Request Demo</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                Backed by IIM Research &bull; 
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="title-line">The Financial Intelligence</span>
+                <span class="title-line gradient-text">Operating System</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                Turn compliance costs into competitive advantage. Automate operations with intelligence.
+                Make decisions based on <span class="accent">causation</span>, not correlation.
+            </p>
+            <div class="hero-stats reveal">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="270" data-suffix="B">$0</span>
+                    <span class="hero-stat-label">Compliance Crisis</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="60" data-suffix="%">0%</span>
+                    <span class="hero-stat-label">Manual Operations</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-target="95" data-suffix="%">0%</span>
+                    <span class="hero-stat-label">Correlation-Based Decisions</span>
+                </div>
+            </div>
+            <div class="hero-ctas reveal">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Request Platform Demo</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#platform" class="btn btn-secondary">
+                    <span>See How It Works</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== PROBLEM SECTION ========== -->
+    <section class="section problem-section" id="problem">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The Triple Crisis</span>
+                <h2 class="section-title">Financial Services Are <span class="gradient-text">Breaking</span></h2>
+                <p class="section-desc">Three interconnected crises compound operational costs, regulatory risks, and strategic blindspots across global finance.</p>
+            </div>
+            <div class="crisis-grid">
+                <!-- Crisis 1 -->
+                <div class="crisis-card reveal" data-delay="0">
+                    <div class="crisis-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+                            <path d="M4 14l20 10 20-10"/>
+                            <path d="M24 44V24"/>
+                            <circle cx="24" cy="14" r="3"/>
+                            <path d="M18 20l-6 4M30 20l6 4"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-number">01</div>
+                    <h3 class="crisis-title">The Compliance Catastrophe</h3>
+                    <div class="crisis-stat">
+                        <span class="crisis-stat-number">$270B</span>
+                        <span class="crisis-stat-label">Annual Global Compliance Spend</span>
+                    </div>
+                    <ul class="crisis-points">
+                        <li>200-300 regulatory updates per week</li>
+                        <li>50,000+ distinct requirements per bank</li>
+                        <li>$10B+ paid annually in penalties</li>
+                        <li>3-7 days to assess each change impact</li>
+                    </ul>
+                    <div class="crisis-quote">
+                        "We have 150 people tracking regulatory changes manually. By the time we understand impact, we're already non-compliant."
+                        <span class="crisis-quote-author">&mdash; Chief Compliance Officer, Regional Bank</span>
+                    </div>
+                </div>
+
+                <!-- Crisis 2 -->
+                <div class="crisis-card reveal" data-delay="200">
+                    <div class="crisis-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="6" y="6" width="36" height="36" rx="4"/>
+                            <path d="M6 18h36M18 6v36"/>
+                            <circle cx="30" cy="30" r="6"/>
+                            <path d="M28 30h4M30 28v4"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-number">02</div>
+                    <h3 class="crisis-title">The Operational Black Hole</h3>
+                    <div class="crisis-stat">
+                        <span class="crisis-stat-number">60%</span>
+                        <span class="crisis-stat-label">Operations Costs = Manual Tasks</span>
+                    </div>
+                    <ul class="crisis-points">
+                        <li>10,000+ invoices processed manually/month</li>
+                        <li>5-8% error rate in manual data entry</li>
+                        <li>8-12 days for month-end close</li>
+                        <li>20-30% of finance time on reconciliation</li>
+                    </ul>
+                    <div class="crisis-quote">
+                        "My team has MBAs and CFAs doing data entry. It's a criminal waste of talent. But RPA breaks on 30% of our work."
+                        <span class="crisis-quote-author">&mdash; CFO, Insurance Company</span>
+                    </div>
+                </div>
+
+                <!-- Crisis 3 -->
+                <div class="crisis-card reveal" data-delay="400">
+                    <div class="crisis-icon">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="24" cy="24" r="20"/>
+                            <path d="M12 24c4-8 8-12 12-12s8 4 12 12c-4 8-8 12-12 12s-8-4-12-12z"/>
+                            <circle cx="24" cy="24" r="4"/>
+                            <path d="M24 4v8M24 36v8M4 24h8M36 24h8"/>
+                        </svg>
+                    </div>
+                    <div class="crisis-number">03</div>
+                    <h3 class="crisis-title">The Correlation Fallacy</h3>
+                    <div class="crisis-stat">
+                        <span class="crisis-stat-number">95%</span>
+                        <span class="crisis-stat-label">Analysis Based on Correlation, Not Causation</span>
+                    </div>
+                    <ul class="crisis-points">
+                        <li>Trillion-dollar decisions on false patterns</li>
+                        <li>Cannot answer WHY or WHAT IF</li>
+                        <li>Risk models fail in tail events</li>
+                        <li>No counterfactual analysis capability</li>
+                    </ul>
+                    <div class="crisis-quote">
+                        "Every analyst can show me what's correlated. No one can tell me what actually CAUSES our returns. We're flying blind on billion-dollar bets."
+                        <span class="crisis-quote-author">&mdash; Chief Investment Officer, Asset Manager</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PLATFORM SECTION ========== -->
+    <section class="section platform-section" id="platform">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">The Solution</span>
+                <h2 class="section-title">One Platform. <span class="gradient-text">Three Engines.</span></h2>
+                <p class="section-desc">SentinelFlow is the first and only platform combining regulatory compliance, process intelligence, and causal decision-making in one integrated system.</p>
+            </div>
+            <div class="platform-visual reveal">
+                <div class="platform-hub">
+                    <div class="platform-hub-inner">
+                        <img src="logo.png" alt="SentinelFlow" class="platform-logo">
+                        <span class="platform-hub-label">SentinelFlow</span>
+                        <span class="platform-hub-sublabel">Financial Intelligence OS</span>
+                    </div>
+                    <div class="platform-ring ring-1"></div>
+                    <div class="platform-ring ring-2"></div>
+                    <div class="platform-ring ring-3"></div>
+                </div>
+                <div class="platform-connections">
+                    <div class="platform-node node-1">
+                        <div class="node-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4l12 8v12l-12 8L4 24V12l12-8z"/><path d="M16 12v8M12 16h8"/></svg>
+                        </div>
+                        <span class="node-label">SentinelCore</span>
+                        <span class="node-sublabel">Compliance</span>
+                    </div>
+                    <div class="platform-node node-2">
+                        <div class="node-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="24" height="24" rx="4"/><path d="M10 16h12M16 10v12"/></svg>
+                        </div>
+                        <span class="node-label">Workflow Nexus</span>
+                        <span class="node-sublabel">Operations</span>
+                    </div>
+                    <div class="platform-node node-3">
+                        <div class="node-icon">
+                            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="12"/><path d="M8 16c2.7-5.3 5.3-8 8-8s5.3 2.7 8 8c-2.7 5.3-5.3 8-8 8s-5.3-2.7-8-8z"/><circle cx="16" cy="16" r="3"/></svg>
+                        </div>
+                        <span class="node-label">DecisionIQ</span>
+                        <span class="node-sublabel">Intelligence</span>
+                    </div>
+                </div>
+            </div>
+            <div class="platform-flow reveal">
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <span>Compliance data feeds operational automation</span>
+                </div>
+                <div class="flow-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="3"/><circle cx="12" cy="4" r="2"/><circle cx="12" cy="20" r="2"/><circle cx="4" cy="12" r="2"/><circle cx="20" cy="12" r="2"/></svg>
+                    </div>
+                    <span>Operational data reveals causal patterns</span>
+                </div>
+                <div class="flow-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <span>Causal intelligence predicts regulatory impact</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ENGINES SECTION ========== -->
+    <section class="section engines-section" id="engines">
+        <div class="container">
+            <!-- Engine 1: SentinelCore -->
+            <div class="engine-block reveal">
+                <div class="engine-header">
+                    <div class="engine-number">Engine 01</div>
+                    <h3 class="engine-name">SentinelCore</h3>
+                    <p class="engine-tagline">Compliance Intelligence Engine</p>
+                    <p class="engine-motto">"Turn compliance from cost center to competitive advantage"</p>
+                </div>
+                <div class="engine-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="16"/><path d="M20 8v12l8 4"/><circle cx="20" cy="20" r="3"/></svg>
+                        </div>
+                        <h4>RegMap AI</h4>
+                        <p>Real-time regulatory change detection across 200+ bodies globally. AI-powered impact assessment in hours, not days.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">90%</span>
+                            <span class="metric-label">faster change assessment</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><circle cx="28" cy="12" r="4"/><circle cx="20" cy="28" r="4"/><path d="M15 14l3 12M25 14l-3 12M16 12h8"/></svg>
+                        </div>
+                        <h4>Compliance Graph</h4>
+                        <p>Knowledge graph with 50,000+ requirements mapped to business processes. Visual compliance landscape with gap analysis.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">360&deg;</span>
+                            <span class="metric-label">compliance posture view</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 36l8-12 6 6 8-16 10 14"/><circle cx="20" cy="14" r="3"/><path d="M20 4v7"/></svg>
+                        </div>
+                        <h4>Transaction Sentinel</h4>
+                        <p>Real-time monitoring with behavioral analytics. ML-powered fraud detection with explainable risk scoring.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">80%</span>
+                            <span class="metric-label">reduction in false positives</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="4" width="28" height="32" rx="3"/><path d="M12 12h16M12 18h16M12 24h10"/><path d="M26 24l4 4 6-8"/></svg>
+                        </div>
+                        <h4>Auto-Reg Reporting</h4>
+                        <p>One-click regulatory report generation with validation logic. FATCA, MiFID II, Basel III, XBRL templates built-in.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">95%</span>
+                            <span class="metric-label">faster report preparation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engine 2: Workflow Nexus -->
+            <div class="engine-block reveal">
+                <div class="engine-header">
+                    <div class="engine-number">Engine 02</div>
+                    <h3 class="engine-name">Workflow Nexus</h3>
+                    <p class="engine-tagline">Intelligent Process Automation</p>
+                    <p class="engine-motto">"80% less manual work, 99.5% accuracy &mdash; with intelligence that understands exceptions"</p>
+                </div>
+                <div class="engine-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="14" height="18" rx="2"/><rect x="22" y="8" width="14" height="18" rx="2"/><path d="M8 26v6h24v-6"/><path d="M11 10h4M11 14h4M11 18h4"/></svg>
+                        </div>
+                        <h4>DocuMind AI</h4>
+                        <p>Multi-format, multi-language document processing. 99.5% accuracy on financial documents with context-aware extraction.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">100x</span>
+                            <span class="metric-label">document throughput</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 8h10v10H8zM22 8h10v10H22zM15 22h10v10H15z"/><path d="M13 18v4h2M27 18v4h-2M18 15h4"/></svg>
+                        </div>
+                        <h4>Reconciliation Brain</h4>
+                        <p>Autonomous reconciliation with fuzzy matching and multi-entity consolidation. Self-healing corrections for common mismatches.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">80%</span>
+                            <span class="metric-label">auto-reconciled</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 4v8M10 10l4 6M30 10l-4 6M4 24h8M28 24h8M10 34l4-6M30 34l-4-6M20 28v8"/><circle cx="20" cy="20" r="8"/><path d="M17 20l2 2 4-4"/></svg>
+                        </div>
+                        <h4>Approval Flow AI</h4>
+                        <p>Risk-based intelligent routing with context-aware prioritization. Parallel approvals and auto-escalation built in.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">50%</span>
+                            <span class="metric-label">fewer bottlenecks</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="16"/><path d="M20 12v8"/><circle cx="20" cy="28" r="2"/><path d="M14 14l2 2M26 14l-2 2"/></svg>
+                        </div>
+                        <h4>ExceptionIQ</h4>
+                        <p>Root cause analysis when things break. Pattern recognition across exceptions with suggested fixes and prevention.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">70%</span>
+                            <span class="metric-label">auto-resolved exceptions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Engine 3: DecisionIQ -->
+            <div class="engine-block reveal">
+                <div class="engine-header">
+                    <div class="engine-number">Engine 03</div>
+                    <h3 class="engine-name">DecisionIQ</h3>
+                    <p class="engine-tagline">Causal Intelligence Platform</p>
+                    <p class="engine-motto">"From correlation to causation &mdash; understand WHY, predict WHAT'S NEXT"</p>
+                </div>
+                <div class="engine-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="20" r="4"/><circle cx="30" cy="10" r="4"/><circle cx="30" cy="30" r="4"/><path d="M14 18l12-6M14 22l12 6"/><path d="M30 14v12"/></svg>
+                        </div>
+                        <h4>Market Cause Engine</h4>
+                        <p>Causal discovery algorithms that identify true market drivers. Temporal precedence analysis and counterfactual reasoning.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">2-5%</span>
+                            <span class="metric-label">alpha generation</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 36h32"/><path d="M8 36V20M14 36V14M20 36V24M26 36V10M32 36V18"/><path d="M4 20l6-6 6 10 6-14 6 8 6-8" stroke-dasharray="4 2"/></svg>
+                        </div>
+                        <h4>Risk Decomposition</h4>
+                        <p>Causal risk attribution distinguishing market, credit, and operational risk. Time-varying analysis with interaction effects.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">30%</span>
+                            <span class="metric-label">better risk accuracy</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 20h24"/><path d="M20 8v24"/><path d="M10 28c4-4 8-12 12-12s4 4 8 0" stroke-dasharray="3 2"/><path d="M10 28c4-2 8-4 12-4s4 2 8 4"/></svg>
+                        </div>
+                        <h4>Counterfactual Simulator</h4>
+                        <p>What-if analysis for strategic decisions. Simulate interventions and see cascading effects through causal pathways.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">50%</span>
+                            <span class="metric-label">fewer failed bets</span>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="20" cy="20" r="16"/><path d="M20 8a12 12 0 010 24"/><path d="M20 12a8 8 0 010 16"/><path d="M20 16a4 4 0 010 8"/><path d="M16 4l4 4 4-4"/></svg>
+                        </div>
+                        <h4>Regulatory Impact Predictor</h4>
+                        <p>Predict regulatory changes 6-12 months in advance. Causal models of regulation-to-business impact with proactive actions.</p>
+                        <div class="feature-metric">
+                            <span class="metric-value">6-12mo</span>
+                            <span class="metric-label">ahead of competitors</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== WHY VAKYA SECTION ========== -->
+    <section class="section why-section" id="why-vakya">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Why Us</span>
+                <h2 class="section-title">Why <span class="gradient-text">Vakya Intelligence</span></h2>
+                <p class="section-desc">Not black-box AI. Research-validated intelligence built from the ground up for financial services.</p>
+            </div>
+            <div class="differentiators-grid">
+                <div class="diff-card reveal" data-delay="0">
+                    <div class="diff-number">01</div>
+                    <div class="diff-icon-wrap">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4l4 8h8l-6 6 2 8-8-4-8 4 2-8-6-6h8l4-8z"/><path d="M8 36h32M12 40h24"/></svg>
+                    </div>
+                    <h3>Research-Backed Technology</h3>
+                    <p>IFATS Framework developed through PhD research at IIM Shillong. Validated across 50+ financial institutions. Published in academic journals.</p>
+                </div>
+                <div class="diff-card reveal" data-delay="150">
+                    <div class="diff-number">02</div>
+                    <div class="diff-icon-wrap">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="24" cy="16" r="8"/><path d="M8 40c0-8 7.2-14 16-14s16 6 16 14"/><path d="M32 12l4-4M36 12l-4-4"/><circle cx="34" cy="8" r="6"/></svg>
+                    </div>
+                    <h3>Domain Expertise + AI Convergence</h3>
+                    <p>We speak CFO language AND CTO language. 15+ years financial services experience combined with cutting-edge NLP and causal ML research.</p>
+                </div>
+                <div class="diff-card reveal" data-delay="300">
+                    <div class="diff-number">03</div>
+                    <div class="diff-icon-wrap">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4v40M4 24h40"/><circle cx="24" cy="24" r="8"/><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="3"/></svg>
+                    </div>
+                    <h3>Integrated Platform</h3>
+                    <p>Three engines, one platform. Data flows, intelligence compounds. Point solutions are commoditized &mdash; integration creates exponential value.</p>
+                </div>
+                <div class="diff-card reveal" data-delay="450">
+                    <div class="diff-number">04</div>
+                    <div class="diff-icon-wrap">
+                        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M24 4C12 4 4 12 4 24s8 20 20 20 20-8 20-20S36 4 24 4z"/><path d="M4 24h40M24 4c-6 6-10 12-10 20s4 14 10 20c6-6 10-12 10-20S30 10 24 4z"/></svg>
+                    </div>
+                    <h3>Built for Indian Regulatory Context</h3>
+                    <p>Not a US product localized. Built FROM THE GROUND UP for India. RBI, SEBI, IRDAI as first-class citizens. Multi-lingual NLP for regional languages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== IMPACT SECTION ========== -->
+    <section class="section impact-section" id="impact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Proven Impact</span>
+                <h2 class="section-title">Measurable <span class="gradient-text">Results</span></h2>
+                <p class="section-desc">Quantified business outcomes for financial institutions using SentinelFlow.</p>
+            </div>
+
+            <div class="impact-metrics reveal">
+                <div class="impact-card">
+                    <div class="impact-value" data-target="40" data-suffix="%">0%</div>
+                    <div class="impact-label">Reduction in Compliance Costs</div>
+                    <div class="impact-detail">$10M &rarr; $6M annually</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-value" data-target="80" data-suffix="%">0%</div>
+                    <div class="impact-label">Less Manual Finance Work</div>
+                    <div class="impact-detail">Redeploy talent to strategic work</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-value" data-target="99.5" data-suffix="%" data-decimals="1">0%</div>
+                    <div class="impact-label">Document Processing Accuracy</div>
+                    <div class="impact-detail">Up from 92-95% manual accuracy</div>
+                </div>
+                <div class="impact-card">
+                    <div class="impact-value" data-target="16" data-suffix="x">0x</div>
+                    <div class="impact-label">Net ROI</div>
+                    <div class="impact-detail">$50M+ value from $3M investment</div>
+                </div>
+            </div>
+
+            <div class="impact-table-wrap reveal">
+                <h3 class="impact-table-title">Before & After SentinelFlow</h3>
+                <div class="impact-table">
+                    <div class="table-row table-header-row">
+                        <div class="table-cell">Metric</div>
+                        <div class="table-cell">Before</div>
+                        <div class="table-cell">After</div>
+                        <div class="table-cell">Impact</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Compliance Costs</div>
+                        <div class="table-cell dim">$10M/year</div>
+                        <div class="table-cell bright">$6M/year</div>
+                        <div class="table-cell accent">-40%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Finance Operations Costs</div>
+                        <div class="table-cell dim">$8M/year</div>
+                        <div class="table-cell bright">$4.5M/year</div>
+                        <div class="table-cell accent">-44%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Regulatory Fines</div>
+                        <div class="table-cell dim">$2M/year</div>
+                        <div class="table-cell bright">$0</div>
+                        <div class="table-cell accent">-100%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Time to Regulatory Compliance</div>
+                        <div class="table-cell dim">7 days</div>
+                        <div class="table-cell bright">2 hours</div>
+                        <div class="table-cell accent">-96%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Month-End Close Time</div>
+                        <div class="table-cell dim">10 days</div>
+                        <div class="table-cell bright">3 days</div>
+                        <div class="table-cell accent">-70%</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">Investment Alpha</div>
+                        <div class="table-cell dim">0%</div>
+                        <div class="table-cell bright">+2-5%</div>
+                        <div class="table-cell accent">$20M+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TECHNOLOGY SECTION ========== -->
+    <section class="section tech-section" id="technology">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Core Technology</span>
+                <h2 class="section-title">Enterprise-Grade <span class="gradient-text">Architecture</span></h2>
+            </div>
+            <div class="tech-grid reveal">
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4l10 6v12L16 28 6 22V10l10-6z"/><circle cx="16" cy="16" r="4"/></svg>
+                    </div>
+                    <h4>Federated Learning</h4>
+                    <p>Client data never leaves their environment. Privacy-preserving by design.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="24" height="24" rx="3"/><path d="M4 12h24M12 4v24"/><circle cx="22" cy="22" r="4"/></svg>
+                    </div>
+                    <h4>Explainable AI</h4>
+                    <p>Every prediction comes with explanation. Audit trail for regulatory compliance.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4v24M8 8l8 4 8-4M8 16l8 4 8-4M8 24l8 4 8-4"/></svg>
+                    </div>
+                    <h4>API-First Architecture</h4>
+                    <p>RESTful APIs, webhooks, SDKs for Python, Java, JavaScript.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="16" cy="16" r="12"/><path d="M10 16h12M16 10v12"/><path d="M16 4a12 12 0 0112 12"/><path d="M28 16a12 12 0 01-12 12"/></svg>
+                    </div>
+                    <h4>Cloud-Native</h4>
+                    <p>Multi-cloud (AWS, Azure, GCP). Kubernetes. 99.9% uptime SLA.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 4h16v24H8z"/><path d="M4 8h4M4 16h4M4 24h4M24 8h4M24 16h4M24 24h4"/><circle cx="16" cy="16" r="4"/></svg>
+                    </div>
+                    <h4>Enterprise Security</h4>
+                    <p>SOC 2 Type II. ISO 27001. Encryption at rest and in transit. RBAC.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 16c0-6.6 5.4-12 12-12s12 5.4 12 12-5.4 12-12 12-12-5.4-12-12z"/><path d="M4 16h24M16 4c-4 4-6 8-6 12s2 8 6 12c4-4 6-8 6-12s-2-8-6-12z"/></svg>
+                    </div>
+                    <h4>Pre-Built Connectors</h4>
+                    <p>Finacle, Flexcube, SAP, Oracle, Bloomberg, Reuters integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM SECTION ========== -->
+    <section class="section team-section" id="team">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Leadership</span>
+                <h2 class="section-title">The <span class="gradient-text">Team</span></h2>
+                <p class="section-desc">Financial domain experts + AI researchers building the future of financial intelligence.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card reveal" data-delay="0">
+                    <div class="team-photo-placeholder">
+                        <div class="team-initials">VD</div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Vivek Dhandapani</h3>
+                        <p class="team-role">Co-Founder & CEO</p>
+                        <ul class="team-credentials">
+                            <li>Gen AI Architect</li>
+                            <li>Bain & Company</li>
+                            <li>from the schools of IIT Madras, IIM Shillong</li>
+                            <li>BFSI SME </li>
+                            <li>ML AI Specialist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="team-card reveal" data-delay="200">
+                    <div class="team-photo-placeholder">
+                        <div class="team-initials">SB</div>
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Sinchana Bangera</h3>
+                        <p class="team-role">Co-Founder & CTO</p>
+                        <ul class="team-credentials">
+                            <li>NLP & Financial Technology Specialist</li>
+                            <li>Finance + AI Convergence Expert</li>
+                            <li>Multi-lingual NLP (Critical for Indian market)</li>
+                            <li>Financial Document Intelligence</li>
+                            <li>AI Engineering Background</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="advisors reveal">
+                <h3 class="advisors-title">Advisors</h3>
+                <div class="advisors-grid">
+                    <div class="advisor-card">
+                        <div class="advisor-photo-placeholder">
+                            <span>GC</span>
+                        </div>
+                        <h4>Gautham Chainani</h4>
+                        <p>Former CHRO, JSW</p>
+                        <span class="advisor-tag">Enterprise Scale Expertise</span>
+                    </div>
+                    <div class="advisor-card">
+                        <div class="advisor-photo-placeholder">
+                            <span>VB</span>
+                        </div>
+                        <h4>Dr. Vishakha Bansal</h4>
+                        <p>IIM Shillong</p>
+                        <span class="advisor-tag">Academic Validation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-wrapper reveal">
+                <div class="contact-content">
+                    <span class="section-tag">Get Started</span>
+                    <h2 class="section-title">Transform Your Financial <span class="gradient-text">Intelligence</span></h2>
+                    <p class="contact-desc">See how SentinelFlow can reduce your compliance costs by 40%, automate 80% of manual operations, and unlock causal intelligence for better decisions.</p>
+                    <div class="contact-highlights">
+                        <div class="contact-highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span>Deploy in 3-6 months</span>
+                        </div>
+                        <div class="contact-highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span>ROI within first year</span>
+                        </div>
+                        <div class="contact-highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span>Enterprise-grade security</span>
+                        </div>
+                        <div class="contact-highlight">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                            <span>Working systems, not PowerPoints</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap">
+                    <!-- Formspree: replace YOUR_FORM_ID with your actual Formspree form ID from https://formspree.io -->
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/xqedbrlr" method="POST">
+                        <h3>Request a Demo</h3>
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Work Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" id="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <select name="role" id="role" required>
+                                <option value="" disabled selected>Your Role</option>
+                                <option value="cco">Chief Compliance Officer</option>
+                                <option value="cfo">CFO</option>
+                                <option value="cro">Chief Risk Officer</option>
+                                <option value="cio">Chief Investment Officer</option>
+                                <option value="cto">CTO / Head of Technology</option>
+                                <option value="ops">Head of Finance Operations</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" id="interest" required>
+                                <option value="" disabled selected>Primary Interest</option>
+                                <option value="sentinelcore">SentinelCore (Compliance)</option>
+                                <option value="workflow">Workflow Nexus (Operations)</option>
+                                <option value="decisioniq">DecisionIQ (Intelligence)</option>
+                                <option value="full">Full Platform</option>
+                            </select>
+                        </div>
+                        <input type="hidden" name="_subject" value="New SentinelFlow Demo Request">
+                        <input type="hidden" name="_next" value="">
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Request Platform Demo</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <p class="form-note">We'll get back within 24 hours. No spam, ever.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Vakya Intelligence" class="footer-logo">
+                    <p class="footer-tagline">The Financial Intelligence Operating System</p>
+                    <p class="footer-company">Vakya Intelligence Private Limited</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Platform</h4>
+                        <a href="#engines">SentinelCore</a>
+                        <a href="#engines">Workflow Nexus</a>
+                        <a href="#engines">DecisionIQ</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <a href="#why-vakya">Why Vakya</a>
+                        <a href="#team">Team</a>
+                        <a href="#impact">Impact</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Connect</h4>
+                        <a href="#contact">Request Demo</a>
+                        <a href="mailto:info@vakyaintelligence.com">info@vakyaintelligence.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Vakya Intelligence Private Limited. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="footer-badge">SentinelCore</span>
+                    <span class="footer-badge">Workflow Nexus</span>
+                    <span class="footer-badge">DecisionIQ</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
